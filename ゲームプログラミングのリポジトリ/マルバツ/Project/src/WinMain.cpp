@@ -43,15 +43,15 @@
 // ==============================
 // グローバル変数
 // ==============================
-※※		// 横:STAGE_WIDTH、縦:STAGE_HEIGHTのint型２次元配列 map を宣言
+//※※		// 横:STAGE_WIDTH、縦:STAGE_HEIGHTのint型２次元配列 map を宣言
 
 // ==============================
 // 関数プロトタイプ宣言
 // ==============================
 // 盤面の x, y の位置に石が置けるかどうか
-※※ // bool型の戻り値、int型の引数x,yを持つIsPutStone関数を宣言
+//※※ // bool型の戻り値、int型の引数x,yを持つIsPutStone関数を宣言
 // 勝者が居るかを調べる
-※※ // int型の戻り値を持つCheckWinner関数を宣言
+//※※ // int型の戻り値を持つCheckWinner関数を宣言
 
 // ==============================
 // Main関数
@@ -71,10 +71,10 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 
 	// ローカル変数宣言
 	// ----------------------------------------------------
-	※※　整数型の変数pos_xを宣言し、0で初期化		// X座標選択位置
-	※※　整数型の変数pos_yを宣言し、0で初期化		// Y座標選択位置
-	※※　整数型の変数turnを宣言し、STONE_WHITEで初期化	// 現在の手番
-	※※　整数型の変数winnerを宣言し、WINNER_NONで初期化	// 勝利者
+	//※※　整数型の変数pos_xを宣言し、0で初期化		// X座標選択位置
+	//※※　整数型の変数pos_yを宣言し、0で初期化		// Y座標選択位置
+	//※※　整数型の変数turnを宣言し、STONE_WHITEで初期化	// 現在の手番
+	//※※　整数型の変数winnerを宣言し、WINNER_NONで初期化	// 勝利者
 
 	// 各種初期化処理
 	// ----------------------------------------------------
@@ -82,7 +82,7 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 	DrawInit();				// 描画処理初期化関数の呼び出し
 
 	// mapの初期化
-	※※　二次元配列mapの全要素を STONE_MAX で初期化する
+	//※※　二次元配列mapの全要素を STONE_MAX で初期化する
 
 	// ゲームのメインループ
 	// 画面を１回表示する毎にwhile分を１回処理する
@@ -97,7 +97,7 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 		// 以下、毎フレーム更新する処理
 		// ----------------------------------------------------
 		InputUpdate();			// 入力処理更新関数の呼び出し
-		※※ winner に勝利者情報を代入	// 勝利者のチェック
+		//※※ winner に勝利者情報を代入	// 勝利者のチェック
 
 		// --- 入力状況をチェックして、適切な処理を行う
 		// 決着がついてない時だけ入力を受け付けるように if文 でチェックする
@@ -106,19 +106,19 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 			// 上下左右の入力があった時の処理
 			if( ※※ )
 			{
-				※※ pos_yの値を 1 減らす
+				//※※ pos_yの値を 1 減らす
 			}
 			else if( ※※ )
 			{
-				※※ pos_yの値を 1 増やす
+				//※※ pos_yの値を 1 増やす
 			}
 			else if( ※※ )
 			{
-				※※ pos_xの値を 1 減らす
+				//※※ pos_xの値を 1 減らす
 			}
 			else if( ※※ )
 			{
-				※※ pos_xの値を 1 増やす
+				//※※ pos_xの値を 1 増やす
 			}
 			// 決定(=エンターキー)が押された時の処理
 			else if( ※※ )
@@ -127,7 +127,7 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 				// 結果が true の時、以下の処理を行う
 				if ( ※※ )
 				{
-					※※
+					//※※
 					// 以下の処理を実装する
 					// 選択されている座標と対応するmap配列の要素へturnの値を代入
 					// 次のターンに回すため、turnの値を変更する
@@ -137,11 +137,11 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 
 		// 以下、描画処理
 		// ----------------------------------------------------
-		※※　// 情報文章を描画
-		※※　// ゲームクリアの文字を描画
-		※※　// 枠線を描画
-		※※　２重for文を使って盤面の石を描画する
-		※※　カーソルを描画
+		//※※　// 情報文章を描画
+		//※※　// ゲームクリアの文字を描画
+		//※※　// 枠線を描画
+		//※※　２重for文を使って盤面の石を描画する
+		//※※　カーソルを描画
 
 		// ＤＸライブラリを使う上で、モニターへゲーム画面を表示するためのお約束
 		// 必ずループの最後で呼び出す
@@ -155,7 +155,7 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 
 	// ＤＸライブラリを使う上での終了処理
 	// ----------------------------------------------------
-	DxLib_End();
+	//DxLib_End();
 	return 0;
 }
 
@@ -166,7 +166,7 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 // ==============================
 bool IsPutStone( int x, int y )
 {
-	※※　盤面の x, y の位置に石が置けるならtrue,置けないならfalseを返す処理
+	//※※　盤面の x, y の位置に石が置けるならtrue,置けないならfalseを返す処理
 }
 
 // ==============================
@@ -174,7 +174,7 @@ bool IsPutStone( int x, int y )
 // ==============================
 int CheckWinner()
 {
-	※※　以下の処理を実装する
+	//※※　以下の処理を実装する
 	// 縦、横、斜めが同じ石かどうかを調べる
 	// STONE_WHITE, STONE_BLACK, STONE_MAXを上手く使いましょう
 

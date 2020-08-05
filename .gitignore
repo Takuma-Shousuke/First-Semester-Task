@@ -8,3 +8,7 @@
 ゲームプログラミングのリポジトリ/Hit_And_Blow/Project/data/
 *.filters
 *.user
+ゲームプログラミングのリポジトリ/Hit_And_Blow/Project/x64/
+*.db-shm
+*.db-wal
+*.opendb

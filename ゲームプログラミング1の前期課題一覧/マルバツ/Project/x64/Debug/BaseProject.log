@@ -1,0 +1,15 @@
+﻿  WinMain.cpp
+C:\Users\skett\Desktop\ゲームプログラミング1の前期課題一覧\マルバツ\Project\src\WinMain.cpp(128,28): error C2446: '==': 'int' 型から 'int (__cdecl *)(void)' 型への変換ができません。
+C:\Users\skett\Desktop\ゲームプログラミング1の前期課題一覧\マルバツ\Project\src\WinMain.cpp(128,22): message : 整数型からポインター型への変換には reinterpret_cast、C スタイル キャストまたは関数スタイル キャストが必要です。
+C:\Users\skett\Desktop\ゲームプログラミング1の前期課題一覧\マルバツ\Project\src\WinMain.cpp(160,9): error C2065: 'IsPutStone': 定義されていない識別子です。
+C:\Users\skett\Desktop\ゲームプログラミング1の前期課題一覧\マルバツ\Project\src\WinMain.cpp(160,27): warning C4805: '==': 演算中の 'unknown-type' 型と 'bool' 型の混用は安全ではありません
+C:\Users\skett\Desktop\ゲームプログラミング1の前期課題一覧\マルバツ\Project\src\WinMain.cpp(196,26): error C2065: 'DRAW_OFFSET_X': 定義されていない識別子です。
+C:\Users\skett\Desktop\ゲームプログラミング1の前期課題一覧\マルバツ\Project\src\WinMain.cpp(196,47): error C2065: 'CELLSIZE': 定義されていない識別子です。
+C:\Users\skett\Desktop\ゲームプログラミング1の前期課題一覧\マルバツ\Project\src\WinMain.cpp(196,63): error C2065: 'CELLSIZE': 定義されていない識別子です。
+C:\Users\skett\Desktop\ゲームプログラミング1の前期課題一覧\マルバツ\Project\src\WinMain.cpp(196,24): error C2789: 'center_x': const で修飾された型のオブジェクトは初期化する必要があります
+C:\Users\skett\Desktop\ゲームプログラミング1の前期課題一覧\マルバツ\Project\src\WinMain.cpp(196): message : 'center_x' の宣言を確認してください
+C:\Users\skett\Desktop\ゲームプログラミング1の前期課題一覧\マルバツ\Project\src\WinMain.cpp(199,27): error C2065: 'DRAW_OFFSET_Y': 定義されていない識別子です。
+C:\Users\skett\Desktop\ゲームプログラミング1の前期課題一覧\マルバツ\Project\src\WinMain.cpp(199,48): error C2065: 'CELLSIZE': 定義されていない識別子です。
+C:\Users\skett\Desktop\ゲームプログラミング1の前期課題一覧\マルバツ\Project\src\WinMain.cpp(199,64): error C2065: 'CELLSIZE': 定義されていない識別子です。
+C:\Users\skett\Desktop\ゲームプログラミング1の前期課題一覧\マルバツ\Project\src\WinMain.cpp(199,25): error C2789: 'center_y': const で修飾された型のオブジェクトは初期化する必要があります
+C:\Users\skett\Desktop\ゲームプログラミング1の前期課題一覧\マルバツ\Project\src\WinMain.cpp(199): message : 'center_y' の宣言を確認してください

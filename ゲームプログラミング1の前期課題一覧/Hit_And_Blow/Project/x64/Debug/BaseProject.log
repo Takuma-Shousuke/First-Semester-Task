@@ -1,0 +1,6 @@
+﻿  WinMain.cpp
+C:\Users\skett\Desktop\ゲームプログラミング1の前期課題一覧\Hit_And_Blow\Project\src\WinMain.cpp(222,22): warning C4805: '==': 演算中の 'int' 型と 'bool' 型の混用は安全ではありません
+C:\Users\skett\Desktop\ゲームプログラミング1の前期課題一覧\Hit_And_Blow\Project\src\WinMain.cpp(227,28): warning C4805: '==': 演算中の 'int' 型と 'bool' 型の混用は安全ではありません
+C:\Users\skett\Desktop\ゲームプログラミング1の前期課題一覧\Hit_And_Blow\Project\src\WinMain.cpp(376,33): warning C4805: '==': 演算中の 'int' 型と 'bool' 型の混用は安全ではありません
+C:\Users\skett\Desktop\ゲームプログラミング1の前期課題一覧\Hit_And_Blow\Project\src\WinMain.cpp(359): warning C4715: 'IsValidDigit': 値を返さないコントロール パスがあります。
+  BaseProject.vcxproj -> C:\Users\skett\Desktop\ゲームプログラミング1の前期課題一覧\Hit_And_Blow\Project\x64\Debug\BaseProject.exe

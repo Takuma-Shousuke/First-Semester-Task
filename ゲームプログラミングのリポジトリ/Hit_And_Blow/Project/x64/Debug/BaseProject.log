@@ -1,0 +1,45 @@
+﻿  WinMain.cpp
+C:\Users\skett\Desktop\GitRepos\ゲームプログラミングのリポジトリ\Hit_And_Blow\Project\src\WinMain.cpp(251,2): error C3873: '0x203b': この文字を識別子の最初の文字にすることはできません
+C:\Users\skett\Desktop\GitRepos\ゲームプログラミングのリポジトリ\Hit_And_Blow\Project\src\WinMain.cpp(251,2): error C3872: '0x203b': この文字を識別子で使用することはできません
+C:\Users\skett\Desktop\GitRepos\ゲームプログラミングのリポジトリ\Hit_And_Blow\Project\src\WinMain.cpp(251,2): error C2065: '※※': 定義されていない識別子です。
+C:\Users\skett\Desktop\GitRepos\ゲームプログラミングのリポジトリ\Hit_And_Blow\Project\src\WinMain.cpp(252,3): error C2146: 構文エラー: ';' が、識別子 'time' の前に必要です。
+C:\Users\skett\Desktop\GitRepos\ゲームプログラミングのリポジトリ\Hit_And_Blow\Project\src\WinMain.cpp(252,8): error C2660: 'time': 関数に 0 個の引数を指定できません。
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\time.h(532,42): message : 'time' の宣言を確認してください
+C:\Users\skett\Desktop\GitRepos\ゲームプログラミングのリポジトリ\Hit_And_Blow\Project\src\WinMain.cpp(261,4): error C3873: '0x203b': この文字を識別子の最初の文字にすることはできません
+C:\Users\skett\Desktop\GitRepos\ゲームプログラミングのリポジトリ\Hit_And_Blow\Project\src\WinMain.cpp(261,4): error C3872: '0x203b': この文字を識別子で使用することはできません
+C:\Users\skett\Desktop\GitRepos\ゲームプログラミングのリポジトリ\Hit_And_Blow\Project\src\WinMain.cpp(263,4): error C3873: '0x203b': この文字を識別子の最初の文字にすることはできません
+C:\Users\skett\Desktop\GitRepos\ゲームプログラミングのリポジトリ\Hit_And_Blow\Project\src\WinMain.cpp(263,4): error C3872: '0x203b': この文字を識別子で使用することはできません
+C:\Users\skett\Desktop\GitRepos\ゲームプログラミングのリポジトリ\Hit_And_Blow\Project\src\WinMain.cpp(261,4): error C2065: '※※': 定義されていない識別子です。
+C:\Users\skett\Desktop\GitRepos\ゲームプログラミングのリポジトリ\Hit_And_Blow\Project\src\WinMain.cpp(263,4): error C2146: 構文エラー: ';' が、識別子 '※※' の前に必要です。
+C:\Users\skett\Desktop\GitRepos\ゲームプログラミングのリポジトリ\Hit_And_Blow\Project\src\WinMain.cpp(263,4): error C2065: '※※': 定義されていない識別子です。
+C:\Users\skett\Desktop\GitRepos\ゲームプログラミングのリポジトリ\Hit_And_Blow\Project\src\WinMain.cpp(268,3): error C2143: 構文エラー: ';' が '}' の前にありません。
+C:\Users\skett\Desktop\GitRepos\ゲームプログラミングのリポジトリ\Hit_And_Blow\Project\src\WinMain.cpp(283,7): error C2065: 'komekome': 定義されていない識別子です。
+C:\Users\skett\Desktop\GitRepos\ゲームプログラミングのリポジトリ\Hit_And_Blow\Project\src\WinMain.cpp(304,7): error C3873: '0x203b': この文字を識別子の最初の文字にすることはできません
+C:\Users\skett\Desktop\GitRepos\ゲームプログラミングのリポジトリ\Hit_And_Blow\Project\src\WinMain.cpp(304,7): error C3872: '0x203b': この文字を識別子で使用することはできません
+C:\Users\skett\Desktop\GitRepos\ゲームプログラミングのリポジトリ\Hit_And_Blow\Project\src\WinMain.cpp(304,7): error C2065: '※※': 定義されていない識別子です。
+C:\Users\skett\Desktop\GitRepos\ゲームプログラミングのリポジトリ\Hit_And_Blow\Project\src\WinMain.cpp(304,14): error C2143: 構文エラー: ';' が ')' の前にありません。
+C:\Users\skett\Desktop\GitRepos\ゲームプログラミングのリポジトリ\Hit_And_Blow\Project\src\WinMain.cpp(305,2): error C2143: 構文エラー: ';' が '{' の前にありません。
+C:\Users\skett\Desktop\GitRepos\ゲームプログラミングのリポジトリ\Hit_And_Blow\Project\src\WinMain.cpp(305,2): error C2143: 構文エラー: ')' が '{' の前にありません。
+C:\Users\skett\Desktop\GitRepos\ゲームプログラミングのリポジトリ\Hit_And_Blow\Project\src\WinMain.cpp(306,3): error C3873: '0x203b': この文字を識別子の最初の文字にすることはできません
+C:\Users\skett\Desktop\GitRepos\ゲームプログラミングのリポジトリ\Hit_And_Blow\Project\src\WinMain.cpp(306,3): error C3872: '0x203b': この文字を識別子で使用することはできません
+C:\Users\skett\Desktop\GitRepos\ゲームプログラミングのリポジトリ\Hit_And_Blow\Project\src\WinMain.cpp(306,3): error C2065: '※※': 定義されていない識別子です。
+C:\Users\skett\Desktop\GitRepos\ゲームプログラミングのリポジトリ\Hit_And_Blow\Project\src\WinMain.cpp(311,2): error C2143: 構文エラー: ';' が '}' の前にありません。
+C:\Users\skett\Desktop\GitRepos\ゲームプログラミングのリポジトリ\Hit_And_Blow\Project\src\WinMain.cpp(313,2): error C3873: '0x203b': この文字を識別子の最初の文字にすることはできません
+C:\Users\skett\Desktop\GitRepos\ゲームプログラミングのリポジトリ\Hit_And_Blow\Project\src\WinMain.cpp(313,2): error C3872: '0x203b': この文字を識別子で使用することはできません
+C:\Users\skett\Desktop\GitRepos\ゲームプログラミングのリポジトリ\Hit_And_Blow\Project\src\WinMain.cpp(313,2): error C2065: '※※': 定義されていない識別子です。
+C:\Users\skett\Desktop\GitRepos\ゲームプログラミングのリポジトリ\Hit_And_Blow\Project\src\WinMain.cpp(314,1): error C2143: 構文エラー: ';' が '}' の前にありません。
+C:\Users\skett\Desktop\GitRepos\ゲームプログラミングのリポジトリ\Hit_And_Blow\Project\src\WinMain.cpp(322,2): error C3873: '0x203b': この文字を識別子の最初の文字にすることはできません
+C:\Users\skett\Desktop\GitRepos\ゲームプログラミングのリポジトリ\Hit_And_Blow\Project\src\WinMain.cpp(322,2): error C3872: '0x203b': この文字を識別子で使用することはできません
+C:\Users\skett\Desktop\GitRepos\ゲームプログラミングのリポジトリ\Hit_And_Blow\Project\src\WinMain.cpp(322,2): error C2065: '※※': 定義されていない識別子です。
+C:\Users\skett\Desktop\GitRepos\ゲームプログラミングのリポジトリ\Hit_And_Blow\Project\src\WinMain.cpp(325,2): error C2143: 構文エラー: ';' が 'for' の前にありません。
+C:\Users\skett\Desktop\GitRepos\ゲームプログラミングのリポジトリ\Hit_And_Blow\Project\src\WinMain.cpp(329,4): error C3873: '0x203b': この文字を識別子の最初の文字にすることはできません
+C:\Users\skett\Desktop\GitRepos\ゲームプログラミングのリポジトリ\Hit_And_Blow\Project\src\WinMain.cpp(329,4): error C3872: '0x203b': この文字を識別子で使用することはできません
+C:\Users\skett\Desktop\GitRepos\ゲームプログラミングのリポジトリ\Hit_And_Blow\Project\src\WinMain.cpp(329,4): error C2065: '※※': 定義されていない識別子です。
+C:\Users\skett\Desktop\GitRepos\ゲームプログラミングのリポジトリ\Hit_And_Blow\Project\src\WinMain.cpp(331,4): error C2143: 構文エラー: ';' が 'if' の前にありません。
+C:\Users\skett\Desktop\GitRepos\ゲームプログラミングのリポジトリ\Hit_And_Blow\Project\src\WinMain.cpp(331,8): error C3873: '0x203b': この文字を識別子の最初の文字にすることはできません
+C:\Users\skett\Desktop\GitRepos\ゲームプログラミングのリポジトリ\Hit_And_Blow\Project\src\WinMain.cpp(331,8): error C3872: '0x203b': この文字を識別子で使用することはできません
+C:\Users\skett\Desktop\GitRepos\ゲームプログラミングのリポジトリ\Hit_And_Blow\Project\src\WinMain.cpp(331,8): error C2065: '※※': 定義されていない識別子です。
+C:\Users\skett\Desktop\GitRepos\ゲームプログラミングのリポジトリ\Hit_And_Blow\Project\src\WinMain.cpp(335,5): error C3873: '0x203b': この文字を識別子の最初の文字にすることはできません
+C:\Users\skett\Desktop\GitRepos\ゲームプログラミングのリポジトリ\Hit_And_Blow\Project\src\WinMain.cpp(335,5): error C3872: '0x203b': この文字を識別子で使用することはできません
+C:\Users\skett\Desktop\GitRepos\ゲームプログラミングのリポジトリ\Hit_And_Blow\Project\src\WinMain.cpp(335,5): error C2065: '※※': 定義されていない識別子です。
+C:\Users\skett\Desktop\GitRepos\ゲームプログラミングのリポジトリ\Hit_And_Blow\Project\src\WinMain.cpp(338,4): error C2143: 構文エラー: ';' が '}' の前にありません。

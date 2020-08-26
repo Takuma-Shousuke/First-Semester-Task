@@ -72,9 +72,16 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 	// ローカル変数宣言
 	// ----------------------------------------------------
 	//※※　整数型の変数pos_xを宣言し、0で初期化		// X座標選択位置
+
+
 	//※※　整数型の変数pos_yを宣言し、0で初期化		// Y座標選択位置
+
+
 	//※※　整数型の変数turnを宣言し、STONE_WHITEで初期化	// 現在の手番
+
+
 	//※※　整数型の変数winnerを宣言し、WINNER_NONで初期化	// 勝利者
+
 
 	// 各種初期化処理
 	// ----------------------------------------------------
@@ -83,6 +90,8 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 
 	// mapの初期化
 	//※※　二次元配列mapの全要素を STONE_MAX で初期化する
+
+
 
 	// ゲームのメインループ
 	// 画面を１回表示する毎にwhile分を１回処理する
@@ -99,6 +108,8 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 		InputUpdate();			// 入力処理更新関数の呼び出し
 		//※※ winner に勝利者情報を代入	// 勝利者のチェック
 
+
+
 		// --- 入力状況をチェックして、適切な処理を行う
 		// 決着がついてない時だけ入力を受け付けるように if文 でチェックする
 		if( ※※ )
@@ -107,18 +118,26 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 			if( ※※ )
 			{
 				//※※ pos_yの値を 1 減らす
+
+
 			}
 			else if( ※※ )
 			{
 				//※※ pos_yの値を 1 増やす
+
+
 			}
 			else if( ※※ )
 			{
 				//※※ pos_xの値を 1 減らす
+
+
 			}
 			else if( ※※ )
 			{
 				//※※ pos_xの値を 1 増やす
+
+
 			}
 			// 決定(=エンターキー)が押された時の処理
 			else if( ※※ )
@@ -128,6 +147,8 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 				if ( ※※ )
 				{
 					//※※
+
+
 					// 以下の処理を実装する
 					// 選択されている座標と対応するmap配列の要素へturnの値を代入
 					// 次のターンに回すため、turnの値を変更する
@@ -138,10 +159,20 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 		// 以下、描画処理
 		// ----------------------------------------------------
 		//※※　// 情報文章を描画
+
+
 		//※※　// ゲームクリアの文字を描画
+
+
 		//※※　// 枠線を描画
+
+
 		//※※　２重for文を使って盤面の石を描画する
+
+
 		//※※　カーソルを描画
+
+
 
 		// ＤＸライブラリを使う上で、モニターへゲーム画面を表示するためのお約束
 		// 必ずループの最後で呼び出す

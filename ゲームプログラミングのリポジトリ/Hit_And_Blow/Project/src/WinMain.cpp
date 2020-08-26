@@ -28,7 +28,7 @@
 	ホームページ、リファレンスページ（用意されている関数の説明）を見てみてください。
 */
 
-/**
+/*
 ■Hit And Blowのルール
 	ルールについては、自分で調べて把握するようにしてください
 
@@ -45,15 +45,25 @@
 // ==============================
 // 定数定義
 // ==============================
-※※　DIGITSという名前の定数or定義で値は４	// 問題の桁数
+//※※　DIGITSという名前の定数or定義で値は４	// 問題の桁数
+const int DIGITS = 4;
+
 
 // ==============================
 // グローバル変数
 // ==============================
-※※　整数型の変数count					// 推測回数	
-※※　整数型の変数cursor					// 選択カーソル
-※※　整数型、配列の要素数DIGITSのtarget	// 目標数の保存配列
-※※　整数型、配列の要素数DIGITSのnum	// 推測数の保存配列
+//※※　整数型の変数count					// 推測回数	
+int count;
+
+//※※　整数型の変数cursor					// 選択カーソル
+int cursor;
+
+//※※　整数型、配列の要素数DIGITSのtarget	// 目標数の保存配列
+int target[DIGITS];
+
+//※※　整数型、配列の要素数DIGITSのnum	// 推測数の保存配列
+int num[DIGITS];
+
 
 // ==============================
 // 関数プロトタイプ宣言
@@ -86,19 +96,39 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 
 	// ローカル変数宣言
 	// ----------------------------------------------------
-	※※　整数型の変数hitを宣言し、0で初期化
-	※※　整数型の変数blowを宣言し、0で初期化
-	※※　bool型の変数gameClearを宣言し、falseで初期化(trueでゲームクリア)
+	//※※　整数型の変数hitを宣言し、0で初期化
+	int hit = 0;
+
+	//※※　整数型の変数blowを宣言し、0で初期化
+	int blow = 0;
+
+	//※※　bool型の変数gameClearを宣言し、falseで初期化(trueでゲームクリア)
+	bool gameClear = false;
+
 
 	// 各種初期化処理
 	// ----------------------------------------------------
 	InputInit();			// 入力処理初期化関数の呼び出し
 	DrawInit();				// 描画処理初期化関数の呼び出し
-	※※　// 問題となる数字の作成
+	//※※　// 問題となる数字の作成
+	srand((unsigned)time(NULL));
+	target[DIGITS] = rand() % 10;
 
-	※※　// countを０で初期化
-	※※　// cursorを０で初期化
-	※※　// 配列 num を for文 で初期化
+
+	//※※　// countを０で初期化
+		int count = 0;
+
+
+	//※※　// cursorを０で初期化
+		int cursor = 0;
+
+
+	//※※　// 配列 num を for文 で初期化
+		for (num[DIGITS] = 0; num[DIGITS] < 9; num[DIGITS]++)
+		{
+		}
+
+
 
 	// ゲームのメインループ
 	// 画面を１回表示する毎にwhile分を１回処理する
@@ -116,36 +146,70 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 
 		// --- 入力状況をチェックして、適切な処理を行う
 		// ゲームクリアしていない時だけ入力を受け付けるように if文 でチェックする
-		if( ※※ )
+		if( gameClear == false )
 		{
 			if(IsPushKey(MY_INPUT_UP))
 			{
-				※※	// num配列のcursor番目を 1 増やす
+				//※※	// num配列のcursor番目を 1 増やす
 					// 増やした結果、9 より大きくなった場合は、0にする
+				num[cursor]++;
+
+				if (num[cursor] > 9)
+				{
+					num[cursor] = 0;
+
+					// Q.ここでカーソルの0番目を表すのはどれ？
+					//					　↓
+					// A.上のほうでcursorを宣言した時に0で初期化したから、0から始まる
+				}
 			}
 			else if(IsPushKey(MY_INPUT_DOWN))
 			{
-				※※	// num配列のcursor番目を 1 減らす
-					// 減らした結果、0 より小さくなった場合は、9にする
+				//※※	// num配列のcursor番目を 1 減らす
+				// 減らした結果、0 より小さくなった場合は、9にする
+				num[cursor]--;
+
+				if (num[cursor] < 0)
+				{
+					num[cursor] = 9;
+				}
 			}
 			else if(IsPushKey(MY_INPUT_LEFT))
 			{
-				※※	// cursorを 1 減らす
+				//※※	// cursorを 1 減らす
 					// 減らした結果、0 より小さくなった場合は、0にする
+				cursor--;
+
+				if (cursor < 0)
+				{
+					cursor = 0;
+				}
 			}
 			else if(IsPushKey(MY_INPUT_RIGHT))
 			{
-				※※	// cursorを 1 増やす
+				//※※	// cursorを 1 増やす
 						// 増やした結果、(DIGITS - 1) より大きくなった場合は、(DIGITS - 1)にする
+				cursor++;
+
+				if (cursor > DIGITS - 1)
+				{
+					cursor = DIGITS - 1;
+
+					// なんで3じゃあかんの？
+				}
 			}
 			else if(IsPushKey(MY_INPUT_ENTER))
 			{
 				// 入力した数字が有効か if文 でチェックする
-				if( ※※ )
+				if( IsValidNumber() == true )
 				{
-					※※	// チェックした結果が true の時、以下の処理を行う
+					// ※※	// チェックした結果が true の時、以下の処理を行う
 						// hit, blowの数をチェックし、その返り値を gameClear に代入
 						// 入力回数 count を 1増やす
+						
+					bool IsMatch(int* numHit, int* numBlow);
+						// hit,blowの返り値をgameClearに代入する
+					count++;
 				}
 			}
 		}
@@ -158,7 +222,7 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 		DrawCursor( cursor, IsValidNumber(), DIGITS );
 
 		// ゲームクリアしていれば、追加で描画
-		if( ※※ )
+		if( gameClear == true )
 		{
 			DrawGameClear();
 		}
@@ -185,10 +249,10 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 void CreateTargetNumber()
 {
 	※※		// 乱数をtime()関数で初期化
-
-	// 0 から DIGITS より小さい間繰り返す for文
+		time();
+	// 0 から始まり DIGITS より小さい間繰り返す for文
 	// ループカウンタの変数名は i とする
-	for( ※※ )
+	for( int i = 0;i < DIGITS; i++ )
 	{
 		target[i] = 0;
 
@@ -213,10 +277,10 @@ bool IsValidNumber()
 {
 	// 0 から DIGITS より小さい間繰り返す for文
 	// ループカウンタの変数名は i とする
-	for( ※※ )
+	for( int i = 0;i < DIGITS; i++ )
 	{
 		// i 番目の桁が無効だったら false を返す
-		if( ※※ )
+		if( komekome )
 		{
 			return false;
 		}

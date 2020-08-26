@@ -16,7 +16,7 @@
 int PlayerGraphHandle[DIR_MAX][DIR_IMAGE_MAX];
 int GroundGraphHandle;
 int BlockGraphHandle;
-int CrateGraphHandle[];		// クレートの種類最大数
+int CrateGraphHandle[※※];		// クレートの種類最大数
 int ClearGraphHandle;
 
 // アニメーションのインデックス配列

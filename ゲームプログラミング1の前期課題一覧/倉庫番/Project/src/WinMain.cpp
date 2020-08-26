@@ -23,6 +23,7 @@
 	※Hit And Blow、マルバツよりもさらにヒントが少ないです。
 	　ゲームのルールに対して、どのような処理が必要かを考える事も、プログラマーの仕事です。
  */
+
 /**
 ■制作環境
 	このプログラムは、[ ＤＸライブラリ ] というライブラリを用いて作られています。
@@ -48,7 +49,7 @@
 // ==============================
 // 関数プロトタイプ宣言
 // ==============================
-// ※※ 必要に応じて関数を追加する
+※※ 必要に応じて関数を追加する
 
 // ==============================
 // Main関数
@@ -71,22 +72,16 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 
 	// 各種初期化処理
 	// ----------------------------------------------------
-	// InputInit();			// 入力処理初期化関数の呼び出し
-	// DrawInit();				// 描画処理初期化関数の呼び出し
+	InputInit();			// 入力処理初期化関数の呼び出し
+	DrawInit();				// 描画処理初期化関数の呼び出し
 
 	// 正しく読み込めたかチェック
-
-	/*
-
 	if ( InitSuccessed() == false )
 	{
 		DrawEnd();
-		// DxLib_End();
+		DxLib_End();
 		return 0;
 	}
-
-	*/
-
 
 	// ゲームを初期化
 	// ----------------------------------------------------
@@ -94,9 +89,6 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 	// ゲームのメインループ
 	// 画面を１回表示する毎にwhile分を１回処理する
 	// ----------------------------------------------------
-
-	/*
-
 	while (ProcessMessage() == 0 && CheckHitKey(KEY_INPUT_ESCAPE) == 0)
 	{
 		// ＤＸライブラリを使う上で、１フレーム分の処理を始めるためのお約束
@@ -129,17 +121,14 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 		ScreenFlip();
 	}
 
-	*/
-
-
 	// 後始末
 	// ----------------------------------------------------
-	// DrawEnd();		// 描画処理終了
+	DrawEnd();		// 描画処理終了
 
 	// ＤＸライブラリを使う上での終了処理
 	// ----------------------------------------------------
-	// DxLib_End();
+	DxLib_End();
 
-	// return 0;
+	return 0;
 }
 

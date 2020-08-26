@@ -1,0 +1,20 @@
+﻿  DrawManager.cpp
+C:\Users\skett\Desktop\GitRepos\ゲームプログラミング1の前期課題一覧\倉庫番\Project\src\DrawManager.cpp(60,22): error C3873: '0x203b': この文字を識別子の最初の文字にすることはできません
+C:\Users\skett\Desktop\GitRepos\ゲームプログラミング1の前期課題一覧\倉庫番\Project\src\DrawManager.cpp(60,22): error C3872: '0x203b': この文字を識別子で使用することはできません
+C:\Users\skett\Desktop\GitRepos\ゲームプログラミング1の前期課題一覧\倉庫番\Project\src\DrawManager.cpp(60,22): error C2065: '※※': 定義されていない識別子です。
+C:\Users\skett\Desktop\GitRepos\ゲームプログラミング1の前期課題一覧\倉庫番\Project\src\DrawManager.cpp(98,22): error C3873: '0x203b': この文字を識別子の最初の文字にすることはできません
+C:\Users\skett\Desktop\GitRepos\ゲームプログラミング1の前期課題一覧\倉庫番\Project\src\DrawManager.cpp(98,22): error C3872: '0x203b': この文字を識別子で使用することはできません
+C:\Users\skett\Desktop\GitRepos\ゲームプログラミング1の前期課題一覧\倉庫番\Project\src\DrawManager.cpp(98,22): error C2065: '※※': 定義されていない識別子です。
+C:\Users\skett\Desktop\GitRepos\ゲームプログラミング1の前期課題一覧\倉庫番\Project\src\DrawManager.cpp(128,22): error C3873: '0x203b': この文字を識別子の最初の文字にすることはできません
+C:\Users\skett\Desktop\GitRepos\ゲームプログラミング1の前期課題一覧\倉庫番\Project\src\DrawManager.cpp(128,22): error C3872: '0x203b': この文字を識別子で使用することはできません
+C:\Users\skett\Desktop\GitRepos\ゲームプログラミング1の前期課題一覧\倉庫番\Project\src\DrawManager.cpp(128,22): error C2065: '※※': 定義されていない識別子です。
+C:\Users\skett\Desktop\GitRepos\ゲームプログラミング1の前期課題一覧\倉庫番\Project\src\DrawManager.cpp(142,2): error C3873: '0x203b': この文字を識別子の最初の文字にすることはできません
+C:\Users\skett\Desktop\GitRepos\ゲームプログラミング1の前期課題一覧\倉庫番\Project\src\DrawManager.cpp(142,2): error C3872: '0x203b': この文字を識別子で使用することはできません
+C:\Users\skett\Desktop\GitRepos\ゲームプログラミング1の前期課題一覧\倉庫番\Project\src\DrawManager.cpp(142,2): error C3872: '0x3000': この文字を識別子で使用することはできません
+C:\Users\skett\Desktop\GitRepos\ゲームプログラミング1の前期課題一覧\倉庫番\Project\src\DrawManager.cpp(142,2): error C2065: '※※　コメントに合わせて描画処理をコーディング': 定義されていない識別子です。
+C:\Users\skett\Desktop\GitRepos\ゲームプログラミング1の前期課題一覧\倉庫番\Project\src\DrawManager.cpp(148,1): error C2143: 構文エラー: ';' が '}' の前にありません。
+C:\Users\skett\Desktop\GitRepos\ゲームプログラミング1の前期課題一覧\倉庫番\Project\src\DrawManager.cpp(159,2): error C3873: '0x203b': この文字を識別子の最初の文字にすることはできません
+C:\Users\skett\Desktop\GitRepos\ゲームプログラミング1の前期課題一覧\倉庫番\Project\src\DrawManager.cpp(159,2): error C3872: '0x203b': この文字を識別子で使用することはできません
+C:\Users\skett\Desktop\GitRepos\ゲームプログラミング1の前期課題一覧\倉庫番\Project\src\DrawManager.cpp(159,2): error C3872: '0x3000': この文字を識別子で使用することはできません
+C:\Users\skett\Desktop\GitRepos\ゲームプログラミング1の前期課題一覧\倉庫番\Project\src\DrawManager.cpp(159,2): error C2065: '※※　描画処理をコーディング': 定義されていない識別子です。
+C:\Users\skett\Desktop\GitRepos\ゲームプログラミング1の前期課題一覧\倉庫番\Project\src\DrawManager.cpp(162,1): error C2143: 構文エラー: ';' が '}' の前にありません。
